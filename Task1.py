@@ -1,12 +1,8 @@
 temp = float(input("Welcome to the temperature converter! Please enter a temperature and its units: "))
-
-if units == F :
+units = input(" ")
+if units=='F':
+    temp_f=(9/5) * temp + 32
     print(temp_f)
 else :
+    temp_c = (5/9) * temp - 32
     print(temp_c)
-
-temp_f = (9/5) * temp_c + 32
-print(temp_f)
-
-temp_c = temp_f - 32 * 5/9
-print(temp_c)
