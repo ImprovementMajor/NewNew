@@ -1,6 +1,7 @@
 import random
 choices=["stone", "paper", "scissors"]
-computer_choice=random.randint(0,len(choices)-1)
+random_index=random.randint(0,len(choices)-1)
+computer_choice=choices[random_index]
 user_choice=input("please enter stone, paper or scissors :")
 if user_choice=="stone" and computer_choice=="paper":
     print("You have won")
