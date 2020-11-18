@@ -11,4 +11,4 @@ if date in errands.keys():
     print(errand_list)
 else:
     print("The date "  + date + " is a not valid date")
-    print("The valid dates are " + str(errands.keys()))
+    print("The valid dates are " + list(errands)
