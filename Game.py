@@ -1,6 +1,6 @@
 import random
 list = ["scissors", "stone", "paper"]
-user_index= input('Please, enter your choice: ')
+input('Please, enter your choice: ')
 user_index = int(user_index)
 user_choice= list[user_index]
 random_index = random.randint(0,len(list)-1)

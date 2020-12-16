@@ -1,4 +1,4 @@
-import random   #got it
+ghimport random   #got it
 
 print("Welcome to the field of magic game! And the main prize is a car")
 print("Here is the assignment for this tour: ")
@@ -26,9 +26,9 @@ while word != guess_word:
         guess_character = input("Your letter is: ")
         if guess_character: break
 
-    guess_character=guess_character[0]# Question: I know it means that a certain letter should be open on the certain position, but how does the program knows how to do that? How does the program know that not only "y" is on "0" position, but "e" is on the "1" position and etc
+    guess_character=guess_character[0]#It takes the first letter from the user input, to prevent people typing more than one letter
     # guess_character => 'y'
-    guessed_any = False #  Question: what is the purpose of this False?
+    guessed_any = False #  Just to check whether or not the user entered at least anything, it is just beginning of the cycle, and user didn't have a chance to enter anything else. That's why it has False value
 
     # word => 'yellow'
     # enumerate(word) => [0, 'y'], [1, 'e']
