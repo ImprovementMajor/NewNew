@@ -1,0 +1,7 @@
+import random
+animals={
+"polar bear" :"white",
+"turtle" : "brown",
+"tiger" : "orange"
+
+}
