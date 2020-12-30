@@ -31,7 +31,7 @@ while health_hero > 0 and health_dragon > 0 : #First main cycle means that the g
         damage_to_hero = random.randint(0, 11)
         health_hero = health_hero - damage_to_hero
         print("The hero's health equals ", health_hero)
-        turn = True # Hero's turn again 
+        turn = True # Hero's turn again
 
     #health_hero = health_hero - 1
     #health_dragon = health_dragon - 1

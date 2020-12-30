@@ -1,4 +1,4 @@
-ghimport random   #got it
+import random   #got it
 
 print("Welcome to the field of magic game! And the main prize is a car")
 print("Here is the assignment for this tour: ")

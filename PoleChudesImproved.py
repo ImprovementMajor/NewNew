@@ -1,35 +1,29 @@
 import random
+list_levels= ["child", "teenager", "adult"]
 print("Welcome to the field of magic game!")
 
 while True:
     difficulty_level= input("Choose the level of difficulty: child, teenager, adult. ")
-    if len(difficulty_level) > 0 : break #Can I add == child, teenager, adult? or should I create separate cycle
+    if difficulty_level in list_levels: break #Can I add == child, teenager, adult? or should I create separate cycle
     print("You didn't enter anything, please try again")
 
 print("Here is the assignment for this tour, level of difficulty is ", difficulty_level)
 
 # Create a dictionary with keys (level of difficulty) and values (assignment for the tour).
 # Where do I write the answers for the assignments? Or can I make 3 different dictionaries under variables child, teenager, adult?
-assignments = {
-"child": "what color is the sun? ", # Where do I write the answers? yellow
-"child": "what color is the sky? ", #blue
-"teenager": "who painted water lilies in 1919? ", #monet
-"teeanager": "who painted the artwork persistence of memory? ", #dali
-"adult" : "who painted the birth of venus?", #botticelli
-"adult" : "what Italian sculptor/architect is credited with creating the Baroque style?" #bernini
+questions_levels = {
+    "child":((task, answer)(task, answer),),
+    "teeanager":("What color is the sun?", "yellow"),
+    "adult":("What color is the vanila ice cream? ", "white")
 }
-
+questions= questions_levels[difficulty_level]
 #Choice function, it works except it doesn't pick a question based on difficulty_level, have to connect it somehow
-entry_list = list(assignments.items()) #converted dictionary into the list?
-random_entry = random.choice(entry_list)
+task = random.choice(questions)
 #print(random_entry)
 
-#Now we have to match it with the question and answer and I don't know how because it's a dictionaries and I have no answers in my dictionaries
-#random_index = random.randint(0, len(questions) - 1)
-task = random_entry
-
-print(task)
-#task = questions[random_index] #I don't know how to assign index to dictionary?????
+#print(task)
+#
+task = questions[random_index] #I don't know how to assign index to dictionary?????
 #question=task[0]
 #word = list(task[1])
 #guess_word = ["_"] * len(word)
