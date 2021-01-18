@@ -2,7 +2,7 @@ import random
 list_levels= ["child", "teenager", "adult"]
 print("Welcome to the field of magic game!")
 
-while True:
+while True: #forever loop until I break 
     difficulty_level= input("Choose the level of difficulty: child, teenager, adult. ")
     if difficulty_level in list_levels: break #Can I add == child, teenager, adult? or should I create separate cycle
     print("You didn't enter anything, please try again")
