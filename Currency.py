@@ -7,10 +7,10 @@ raw_data = urllib.request.urlopen(url).read() #getting data based on the link an
 parsed_data = json.loads(raw_data) #turning raw data into dictionary if json format only
 
 if not parsed_data['success']: exit("Не удалось загрузить курсы валют :(") #Haven't seen if not before #success != True
-#Not sure how does success key work?
+#Not sure how does success key work? если парст дата не саксес то выходитб Parsed data means data transformed from what to what?
 print("Добро пожаловать! Курсы валют были обновлены", parsed_data['date'])
 
-rates = parsed_data['rates'] #
+rates = parsed_data['rates'] # we get rates and success from the raw data, right? where success is a key
 while True:
     eur = float(input("Введите сумму в евро: ")) #user input
     while True:
